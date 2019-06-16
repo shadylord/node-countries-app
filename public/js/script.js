@@ -23,7 +23,7 @@ countryForm.addEventListener("submit", event => {
 
   errorMessage.textContent = "";
 
-  fetch(`http://localhost:3000/countries?countryName=${countryName}`)
+  fetch(`/countries?countryName=${countryName}`)
     .then(response => response.json())
     .then(data => {
       if (data.error) {
