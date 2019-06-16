@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  /* font-family: sans-serif; */
+}
+
+.footer-content {
+  margin-top: 1rem;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #343a40;
+  text-align: center;
+  color: white;
+  padding: 0.1rem;
+}
+
+.content-result {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+  width: 100%;
+}
+
+#error-section {
+  display: none;
+}
+
+#success-section {
+  display: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+
+    {{> bootstrap }}
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    {{> header }}
+
+    <div class="container mt-5">
+        <h4>Countries App</h4>
+        <hr>
+
+        <p>Enter a country name and hit enter to see the country's data.</p>
+
+        <div class="mt-5">
+            <form>
+                <div class="form-group">
+                    <label for="countryName">Country Name</label>
+                    <input type="text" class="form-control" id="countryName" placeholder="Enter country name">
+                </div>
+                <button type="submit" class="btn btn-primary float-right">Enter</button>
+            </form>
+        </div>
+
+        <div class="content-result" id="error-section">
+            <div class="row">
+                <div class="col">
+                    <h4>Result</h4>
+                    <hr>
+
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-result" id="success-section">
+            <div class="row">
+                <div class="col">
+                    <h4>Result</h4>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                {{!-- <div class="col-12 col-sm-4 col-md-4 mt-3">
+                    <img id="imageFlagResult" src="#" width="100%" alt="Flag">
+                </div>
+
+                <div class="col-8 col-md-8 mt-3">
+                    <h4 id="countryNameResult"></h4>
+                    <h6 id="capitalCityResult"></h6>
+
+                    <div class="mt-5">
+                        <p id="countryDescriptionResult"></p>
+                    </div>
+                </div> --}}
+
+                <div class="col-12 col-6 col-md-4 mt-3">
+                    <img id="imageFlagResult" src="#" width="100%" alt="Flag">
+                </div>
+
+                <div class="col-sm-6 col-md-8 mt-3">
+                    <h4 id="countryNameResult"></h4>
+                    <h6 id="capitalCityResult"></h6>
+
+                    <div class="mt-5">
+                        <p id="countryDescriptionResult"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{> footer }}
+
+    {{> script }}
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
