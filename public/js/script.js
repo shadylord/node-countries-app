@@ -49,7 +49,7 @@ countryForm.addEventListener("submit", event => {
         const regionalBlocsSymbol = countryData.regionalBlocs[0].acronym;
         const regionalBlocsName = countryData.regionalBlocs[0].name;
 
-        const countryDescription = `${name} is a country located in ${subRegion}. The capital city of ${name} is ${capital}. The total population of ${name} is ${population}. This country has ${timezonesLength} timezone(s). ${name} currency is '${currenciesSymbol}' or ${currenciesName}. ${name} native language is ${languages} (${languagesName}). ${name} regional blocs is ${regionalBlocsName} (${regionalBlocsSymbol}).`;
+        const countryDescription = `${name} is a country located in ${subRegion}. The capital city of ${name} is ${capital}. The total population of ${name} are ${population}. This country has ${timezonesLength} timezone(s). ${name} currency is '${currenciesSymbol}' or ${currenciesName}. ${name} native language is ${languages} (${languagesName}). ${name} regional blocs is ${regionalBlocsName} (${regionalBlocsSymbol}).`;
 
         imageFlagResult.src = flag;
 
